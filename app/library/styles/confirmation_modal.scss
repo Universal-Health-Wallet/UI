@@ -1,0 +1,24 @@
+.c-confirmation-modal {
+  &_header {
+    font-size: 18px;
+  }
+  &_button-container {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &_button__positive {
+    padding: 8px 24px;
+    background: #ff3838;
+    border: 0;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer; 
+  }
+  &_button__negative {
+    cursor: pointer;
+    padding: 8px 24px;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+  }
+}

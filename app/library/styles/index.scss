@@ -1,0 +1,155 @@
+@font-face {
+  font-family: Ropa;
+  src: url('/static/files/RopaSans-Regular.ttf');
+}
+* {
+  box-sizing: border-box;
+  font-family: Ropa, Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin:0;
+  padding:0;
+}
+.h-flex {
+  display: flex;
+}
+
+.h-width {
+  &--100{
+    width: 100%;
+  }
+}
+
+.chevron::before {
+	border-style: solid;
+	border-width: 2px 2px 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	position: relative;
+	top: 0.15em;
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 0.45em;
+}
+
+.chevron-right:before {
+	left: 0;
+	transform: rotate(45deg);
+}
+
+.chevron-bottom:before {
+	top: 0;
+	transform: rotate(135deg);
+}
+
+.chevron-left:before {
+	left: 0.25em;
+	transform: rotate(-135deg);
+}
+
+.u{
+	&-flex{
+		display: flex;
+		&--center {
+			@extend .u-flex;
+			justify-content: center;
+		}
+	}
+	&-text {
+		&-white {
+			color: #fff;
+		}
+		&--alpha {
+			font-size: 32px;
+		}
+		&--beta {
+			font-size: 24px;
+		}
+		&--gamma {
+			font-size: 18px;
+		}
+		&-left {
+			text-align: left;
+		}
+	}
+	&-p{
+		&--30 {
+			padding: 30px;
+		}
+		&-h--8 {
+			padding-top: 8px;
+			padding-bottom: 8px;
+		}
+		&-v--12 {
+			padding-left: 12px;
+			padding-right: 12px;
+		}
+		&-l {
+			&--8 {
+				padding-left: 8px;
+			}
+		}
+	}
+	&-bg {
+		&--violet {
+			background-color: #2e4488;
+		}
+	}
+	&-border {
+		&--none {
+			border: 0;
+		}
+		&-radius {
+			&--8 {
+				border-radius: 8px;
+			}
+		}
+	}
+	&-cursor {
+		&--pointer {
+			cursor: pointer;
+		}
+	}
+	&-m{
+		&--auto {
+			margin: auto;
+		}
+		&-t {
+			&--45 {
+				margin-top: 45px;
+			}
+			&--15 {
+				margin-top: 15px;
+			}
+			&--10 {
+				margin-top: 10px;
+			}
+			&--6 {
+				margin-top: 6px;
+			}
+		}
+		&-l {
+			&--45 {
+				margin-left: 45px;
+			}
+			&--15 {
+				margin-left: 15px;
+			}
+			&--10 {
+				margin-left: 10px;
+			}
+			&--6 {
+				margin-left: 6px;
+			}
+		}
+	}
+	&-width {
+		&--45 {
+			width: 45%;
+		}
+	}
+}
+

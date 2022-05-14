@@ -6,8 +6,8 @@ const routes = [
     path: '/home',
     name: 'Landing',
     defaultComponent: LandingPageDesktop,
-    mobileComponent: LandingPageDesktop
-  }
+    mobileComponent: LandingPageDesktop,
+  },
 ];
 
 export default routes;

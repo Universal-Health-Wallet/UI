@@ -8,6 +8,11 @@ const baseConfig = {
   mode: environment,
   module: {
     rules: [
+      {
+        test: /\.mjs$/,
+        include: /node_modules/,
+        type: 'javascript/auto'
+      },
       { test: /\.(js|jsx)$/, exclude: /node_modules/, use: ['babel-loader'] },
       {
         test: /\.scss$/i,

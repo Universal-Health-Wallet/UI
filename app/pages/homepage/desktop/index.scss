@@ -43,11 +43,14 @@
   }
 }
 
-.c-border-mag {
-  border: 2px solid #A379E5;
+.c-connect-button {
+  font-size: 18px !important;
+  padding: 8px 35px !important;
+  color: #A379E5 !important;
+  border: 2px solid #A379E5 !important;
   &:hover {
-    color: white;
-    background-color: #A379E5;
+    color: white !important;
+    background-color: #A379E5 !important;
   }
 }
 

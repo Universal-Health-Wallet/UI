@@ -2,9 +2,21 @@
   font-family: Ropa;
   src: url('/static/files/RopaSans-Regular.ttf');
 }
+@font-face {
+  font-family: Montserrat;
+  src: url('/static/files/Montserrat.ttf');
+}
+@font-face {
+  font-family: MontserratBold;
+  src: url('/static/files/Montserrat-Bold.ttf');
+}
+@font-face {
+  font-family: MontserratXBold;
+  src: url('/static/files/Montserrat-ExtraBold.ttf');
+}
 * {
   box-sizing: border-box;
-  font-family: Ropa, Arial, Helvetica, sans-serif;
+  font-family: Montserrat, Ropa, Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -56,11 +68,29 @@ body {
 		&--center {
 			@extend .u-flex;
 			justify-content: center;
+			align-items: center;
 		}
 	}
 	&-text {
+		&-font {
+			&--mb {
+			font-family: MontserratBold;
+			}
+			&--xmb {
+			font-family: MontserratXBold;
+			}
+		}
 		&-white {
 			color: #fff;
+		}
+		&-cyan {
+			color: #1ED6E5;
+		}
+		&-magenta {
+			color: #A379E5;
+		}
+		&--supreme {
+			font-size: 70px;
 		}
 		&--alpha {
 			font-size: 32px;
@@ -71,6 +101,9 @@ body {
 		&--gamma {
 			font-size: 18px;
 		}
+		&--bold {
+			font-weight: bold;
+		}
 		&-left {
 			text-align: left;
 		}
@@ -79,13 +112,25 @@ body {
 		&--30 {
 			padding: 30px;
 		}
-		&-h--8 {
+		&-v{
+			&--8 {
 			padding-top: 8px;
 			padding-bottom: 8px;
 		}
-		&-v--12 {
-			padding-left: 12px;
-			padding-right: 12px;
+			&--24 {
+			padding-top: 24px;
+			padding-bottom: 24px;
+		}
+	}
+		&-h{
+			&--12 {
+				padding-left: 12px;
+				padding-right: 12px;
+			}
+			&--35 {
+				padding-left: 35px;
+				padding-right: 35px;
+			}
 		}
 		&-l {
 			&--8 {
@@ -149,6 +194,11 @@ body {
 	&-width {
 		&--45 {
 			width: 45%;
+		}
+	}
+	&-lh {
+		&--1 {
+			line-height: 1;
 		}
 	}
 }

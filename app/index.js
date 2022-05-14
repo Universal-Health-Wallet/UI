@@ -10,22 +10,20 @@ const App = ({ platform }) => {
   return (
     <div>
       <Switch>
-        {
-          filterRoutes(routes, platform).map(route => (
-            <Route key={route.path} {...route} />
-          ))
-        }
+        {filterRoutes(routes, platform).map((route) => (
+          <Route key={route.path} {...route} />
+        ))}
       </Switch>
     </div>
   );
 };
 
 App.propTypes = {
-  platform: PropTypes.string.isRequired
+  platform: PropTypes.string.isRequired,
 };
 
 export default connect(
-  state => ({ platform: state.app.platform }),
+  (state) => ({ platform: state.app.platform }),
   null,
-  null
+  null,
 )(App);

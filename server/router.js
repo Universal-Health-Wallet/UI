@@ -19,7 +19,7 @@ const router = (server) => {
         apiUrl: process.env.API_URL,
         gaTrackingId: process.env.GA_TRACKING_ID,
         platform,
-      }
+      };
       res.send(renderer.default(filteredActiveRoute, initialState, styles));
     } catch (error) {
       console.log(error);

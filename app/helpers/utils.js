@@ -7,7 +7,7 @@ export const getPlatform = (userAgent) => {
 };
 
 export const filterRoutes = (routes, platform) => {
-  routes.forEach(route => {
+  routes.forEach((route) => {
     if (platform === 'mobile' && route.mobileComponent) {
       route.component = route.mobileComponent;
     } else {

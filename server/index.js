@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 8080;
 const host = process.env.HOST || '0.0.0.0';
-app.use('/static', express.static("static"), express.static("public"));
+app.use('/static', express.static('static'), express.static('public'));
 router.default(app);
 
 app.listen(port, host, () => {

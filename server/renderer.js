@@ -13,7 +13,7 @@ const renderer = (route, initialState, styles) => {
       <Provider store={store}>
         <App />
       </Provider>
-    </StaticRouter>
+    </StaticRouter>,
   );
   const helmet = Helmet.renderStatic();
   return htmlTemplate(markup, styles, initialState, helmet);

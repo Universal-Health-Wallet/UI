@@ -1,15 +1,15 @@
 module.exports = {
   apps: [
     {
-      name: "uhw",
-      script: "build/server.js",
+      name: 'uhw',
+      script: 'build/server.js',
       instances: 'max',
       env: {
-        NODE_ENV: "development"
+        NODE_ENV: 'development',
       },
       env_production: {
-        NODE_ENV: "production"
-      }
-    }
-  ]
+        NODE_ENV: 'production',
+      },
+    },
+  ],
 };

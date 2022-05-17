@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 const htmlTemplate = (markup, styles, initialState = {}, helmet) => {
-  return (`
+  return `
   <html ${helmet.htmlAttributes.toString()}>
     <head>
       ${helmet.title.toString()}
@@ -16,7 +16,7 @@ const htmlTemplate = (markup, styles, initialState = {}, helmet) => {
       <div id="root">${markup}</div>
       <script src="/static/js/client.js" defer></script>
     </body>
-  </html>`);
+  </html>`;
 };
 
 export default htmlTemplate;
